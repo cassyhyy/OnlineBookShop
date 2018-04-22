@@ -1,0 +1,26 @@
+div.circlecircum {
+    border-radius: 5px;
+    border: 2px solid #9d9d9d;
+}
+
+div.darkback {
+    background-color: #222;
+}
+
+div.darkback h1 {
+    color: #9d9d9d;
+}
+
+input#title {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 250px;
+    width: 100%;
+}
+
+.margin-bottom-small {
+    margin-bottom: 8px;
+}

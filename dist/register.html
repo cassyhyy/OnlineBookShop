@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <title>注册 - Online Booking</title>
+    <link href="css/register-style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/register.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="narbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarul" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">网上书店</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarul">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="shopping.html">我的购物车</a></li>
+            <li><a href="searchPage.html">搜索</a></li>
+            <li><a href="helpPage.html">使用方式</a></li>
+            <li><a href="helpPage.html">联系我们</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="unlog">
+            <li class="navbar-leftborder"></li>
+            <li><a class="btn btn-success" href="login.html">登录</a></li>
+            <li><a class="btn btn-info" href="register.html">注册</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-hide" id="login">
+            <li class="navbar-leftborder"></li>
+            <li class="navbar-middleondrop"><img class="navbar-profile" id="userprofile" src="/img/default.jpg"></li>
+            <li><a class="dropdown-toggle" id="usernick" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+              <ul class="dropdown-menu dropdown-inverse">
+                <li><a id="personalpage" href="#">用户名</a></li>
+                <li class="divider" role="separator"></li>
+                <li><a class="btn btn-danger" onclick="logOut()">注销</a></li>
+              </ul>
+            </li>
+            <li class="navbar-hideondrop"> 
+              <p class="navbar-text">消息<span class="badge"></span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="showwindow">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="info-l">
+              <div class="col-md-10 col-md-push-1">
+                <div class="title">
+                  <p class="title-1">·填写注册信息</p>
+                  <hr>
+                  <div class="col-md-10 col-md-push-1">
+                    <div class="info-m">
+                      <div class="info-s">
+                        <p class="title-2">*用户名：</p>
+                        <div class="info">
+                          <input class="name" type="text" id="name" onclick="showMess(this)" onchange="userid(this)">
+                        </div>
+                        <p class="title-3">英文,数字或下划线</p>
+                        <p class="glyphicon glyphicon-ok"></p>
+                        <p class="alert" id="alert-1">用户名已存在</p>
+                        <p class="alert" id="alert-2">输入不符合规范</p>
+                      </div>
+                      <div class="info-s">
+                        <p class="title-2">*邮箱：</p>
+                        <div class="info">
+                          <input class="name" type="email" id="email" onclick="showMess(this)" onchange="email(this)">
+                        </div>
+                        <p class="title-3">请输入有效邮箱</p>
+                        <p class="glyphicon glyphicon-ok"></p>
+                        <p class="alert">邮箱格式不正确</p>
+                      </div>
+                      <div class="info-s">
+                        <p class="title-2">*密码：</p>
+                        <div class="info">
+                          <input class="name" type="password" id="password" onclick="showMess(this)" oninput="passLen(this)">
+                        </div>
+                        <p class="title-3">请输入6-16位密码</p>
+                        <p class="glyphicon glyphicon-ok"></p>
+                        <p class="alert">密码长度不符</p>
+                      </div>
+                      <div class="info-s">
+                        <p class="title-2">*确认密码：                                                    </p>
+                        <div class="info">
+                          <input class="name" type="password" id="re-password" onclick="showMess(this)" onchange="passwordRe(this)">
+                        </div>
+                        <p class="title-3">请确认密码</p>
+                        <p class="glyphicon glyphicon-ok"></p>
+                        <p class="alert">密码与之前输入不符        </p>
+                      </div>
+                      <div class="col-md-6 col-md-push-3"></div><a class="btn btn-success" onclick="upRegInfo()">注册</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

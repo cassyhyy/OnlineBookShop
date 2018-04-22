@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/global.js"></script>
+    <script src="/js/angular.min.js" type="text/javascript"></script>
+    <title>网上书店 - Online Booking</title>
+    <link href="css/index-style.css" rel="stylesheet">
+    <script src="/js/index.js" type="text/javascript"></script>
+  </head>
+  <body ng-app="index">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="narbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarul" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">网上书店</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarul">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="shopping.html">我的购物车</a></li>
+            <li><a href="orderPage.html">我的订单</a></li>
+            <li><a href="searchPage.html">搜索</a></li>
+            <li><a href="helpPage.html">使用方式</a></li>
+            <li><a href="helpPage.html">联系我们</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="unlog">
+            <li class="navbar-leftborder"></li>
+            <li><a class="btn btn-success" href="login.html">登录</a></li>
+            <li><a class="btn btn-info" href="register.html">注册</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-hide" id="login">
+            <li class="navbar-leftborder"></li>
+            <li class="navbar-middleondrop"><img class="navbar-profile" id="userprofile" src="/img/default.jpg"></li>
+            <li><a class="dropdown-toggle" id="userid" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+              <ul class="dropdown-menu dropdown-inverse">
+                <li><a class="btn btn-danger" onclick="logOut()">注销</a></li>
+              </ul>
+            </li>
+            <li class="navbar-hideondrop"> 
+              <p class="navbar-text">消息<span class="badge"></span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="showwindow">
+      <div class="top-search">
+        <div class="container" ng-controller="searchCtrl">
+          <div class="row">
+            <div class="col-md-2">
+              <h1>网上书店</h1>
+              <p>OnlineBooking</p>
+            </div>
+            <div class="col-md-9 col-md-push-1">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="search-type">
+                    <div class="col-md-3"><a id="name-search" href="javascript:void(0);" onclick="searchType(1)" ng-model="type" ng-click="method.change(1)">按名称搜索</a></div>
+                    <div class="col-md-3"><a id="author-search" href="javascript:void(0);" onclick="searchType(2)" ng-model="type" ng-click="method.change(2)">按作者搜索</a></div>
+                    <div class="col-md-3"><a id="ISBN-search" href="javascript:void(0);" onclick="searchType(3)" ng-model="type" ng-click="method.change(3)">按编号搜索</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="search-bar">
+                    <input class="form-control" id="search" type="text" name="search" placeholder="请输入书籍名称" ng-model="searchValue">
+                  </div>
+                </div>
+                <div class="col-md-3 col-md-push-1">
+                  <div class="search-button"><a class="btn btn-info" id="search-button" href="/searchPage?#type={{type}}&value={{searchValue}}">寻找书籍</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <div class="container-fluid">
+          <div class="row">            
+            <div class="col-md-8 col-md-push-2">
+              <div class="left-top">
+                <div class="col-md-1">
+                  <div class="spe-lab">
+                    <p class="glyphicon glyphicon-th-list"></p>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="booktype">
+                    <p>畅销书籍</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div ng-controller="getBookInfoCtrl" >
+              <div class="col-md-8 col-md-push-2" ng-repeat="book in books">
+                <div class="left">
+                  <div class="col-md-push-2">
+                    <div class="book-show">
+                      <div class="col-md-3">
+                        <div class="book-cover"><img id="book-cover" src="{{book.cover}}"></div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="book-name">
+                          <div class="col-md-8"><a href="/bookdetail?#id={{book.id}}">{{book.title}}</a></div>
+                          <div class="col-md-4">
+                            <p class="price">￥{{book.price}}</p>
+                          </div>
+                        </div>
+                        <div class="book-info-1">
+                          <div class="col-md-4">
+                            <p>作者：{{book.author}}</p>
+                          </div>
+                          <div class="col-md-8">
+                            <p>出版社：{{book.publisher}}</p>
+                          </div>
+                        </div>
+                        <div class="book-info-1">
+                          <div class="col-md-4">
+                            <p>ISBN：{{book.isbn}}</p>
+                          </div>
+                          <div class="col-md-8">
+                            <p>出版时间：{{book.pubdate}}</p>
+                          </div>
+                        </div>
+                        <div class="book-info-1">
+                          <div class="col-md-12">
+                            <p id="summary">内容简介：{{book.summary}}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

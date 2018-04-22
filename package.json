@@ -1,0 +1,26 @@
+{
+  "name": "onlinebookshop",
+  "version": "1.0.0",
+  "description": "database principle homework-online book shop project",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "cookies": "^0.7.1",
+    "koa": "^2.4.1",
+    "koa-body": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.2",
+    "mysql2": "^1.4.2",
+    "nunjucks": "^2.5.2"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "hyy",
+  "license": "UNLICENSED"
+}

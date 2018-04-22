@@ -1,0 +1,121 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.middle {
+  /*background: #fdfdfd;*/
+  /*padding: 1rem;*/
+  margin: 1rem auto;
+  border-radius: 0.2rem;
+  counter-reset: pagination;
+  text-align: center;
+}
+.middle:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.middle ul {
+  width: 100%;
+}
+
+.middle {
+  width: 32rem;
+  height:50px;
+}
+
+.middle ul, li {
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+.middle li {
+  counter-increment: pagination;
+}
+.middle li:hover a {
+  color: #fdfdfd;
+  background-color: #1d1f20;
+  border: solid 1px #1d1f20;
+}
+.middle li.active a {
+  color: #fdfdfd;
+  background-color: #1d1f20;
+  border: solid 1px #1d1f20;
+}
+.middle li:first-child {
+  float: left;
+}
+.middle li:first-child a:after {
+  content: "Previous";
+}
+.middle li:nth-child(2) {
+  counter-reset: pagination;
+}
+.middle li:last-child {
+  float: right;
+}
+.middle li:last-child a:after {
+  content: "Next";
+}
+.middle li a {
+  border: solid 1px #d6d6d6;
+  border-radius: 0.2rem;
+  color: #AAAAAA;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 0.9rem;
+}
+.middle li a:after {
+  content: " " counter(pagination) " ";
+}
+
+.middle .large li a {
+  display: none;
+}
+
+.middle li a {
+  display: none;
+}
+.middle li:first-child a {
+  display: inline-block;
+}
+.middle li:first-child a:after {
+  content: "<";
+}
+.middle li:last-child a {
+  display: inline-block;
+}
+.middle li:last-child a:after {
+  content: ">";
+}
+.middle li:nth-child(2) a {
+  display: inline-block;
+}
+.middle li:nth-child(3) a {
+  display: inline-block;
+}
+.middle li:nth-child(4) a {
+  display: inline-block;
+}
+.middle li:nth-child(5) a {
+  display: inline-block;
+}
+.middle li:nth-last-child(2) a {
+  display: inline-block;
+}
+.middle li:nth-last-child(3) {
+  display: inline-block;
+}
+.middle li:nth-last-child(3):after {
+  padding: 0 1rem;
+  content: "...";
+}

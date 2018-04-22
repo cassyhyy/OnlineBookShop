@@ -1,0 +1,63 @@
+div.showwindow-login{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 50px;
+    bottom: 0px;
+    background-image: url(../img/login-back-1.jpg);
+    background-color: #FAFAFA;
+    background-size: 100% 100%;
+}
+
+div.login-window{
+    padding-top: 20px;
+    background-color: rgba(222,222,222,0.7);
+}
+
+div.login-window label {
+    font-size: 18px;
+}
+
+div.margin-top-large {
+    margin-top: 100px;
+}
+
+span.minitext-right {
+    display: block;
+    margin: 5px 0 10px 0;
+    text-align: right;
+}
+
+.tint-text {
+    font-size: 14px;
+    color: #333333;
+}
+
+.grey-tint {
+    font-size: 16px;
+    color: #444444;
+}
+
+.margin-small-top {
+    margin-top: 10px;
+}
+
+.margin-small-bottom {
+    margin-bottom: 10px;
+}
+
+a.fullbutton {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 42px;
+}
+
+@media screen and (min-width: 992px) {
+    a.fullbutton {
+        margin-top: 0;
+        width: 100%;
+    }
+}

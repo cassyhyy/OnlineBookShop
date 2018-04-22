@@ -1,0 +1,146 @@
+body{
+    font-family: "Microsoft Yahei","微软雅黑";
+    width: 100%;
+    height: auto;
+}
+
+div.showwindow{
+    /*position: absolute;*/
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    bottom: 0px;
+    background-image: url(../img/login-back-3.jpg);
+    background-color: #FAFAFA;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+div.showwindow h1{
+    color: #EFEFEF;
+}
+div.showwindow p{
+    color: #EFEFEF;
+}
+
+div.top-search{
+    position: absolute;
+    background-color: #1A4677;
+    height: 100px;
+    width: 100%;
+}
+
+div.center{
+    padding-top:150px;
+    background-color: transparent;
+    height:auto;
+    min-height: 800px;
+    bottom: 0px;
+}
+
+div.left{
+    top:40px;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+div.left-top{
+    background-color: #1A4677;
+    width: 100%;
+    height: 40px;
+    padding-top :5px;
+    padding-left: 10px;
+}
+div.left-top p{
+    font-size: 18px;
+    color: #FAFAFA;
+}
+
+div.booktype{
+    margin-left: -10%;
+}
+
+div.spe-lab{
+    margin-top: 4px;
+}
+
+
+div.search-bar{
+    padding-top : 5px;
+}
+
+div.search-button{
+    padding-top : 5px;
+}
+
+div.book-show{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(222,222,222,0.8);
+    padding-top :25px;
+    padding-left: 20px;
+}
+
+div.book-show:hover{
+    border:1px #1A4677 solid;
+}
+
+div.book-show a{
+    font-size: 22px;
+    color: #282828;
+    text-decoration: none;
+}
+
+div.book-show a:hover{
+    font-size: 22px;
+    color: #3F4FC6;
+}
+
+div.book-show p{
+    font-size: 16px;
+    color: #282828;
+}
+
+div.book-name p.price{
+    font-size: 22px;
+    color: #4B81FE;
+}
+
+div.book-cover{
+    width: 90%;
+    height: 200px;
+    background-color: #CACEDE;
+}
+
+div.book-info-1{
+    margin-top: 5px;
+
+}
+
+div.search-type{
+    padding-top:15px;
+}
+div.search-type a{
+    color: #CACEDE;
+}
+div.search-type a:hover{
+    color: #8CA3FE;
+    text-decoration: none;
+}
+div.search-type a#name-search{
+    color: #8CA3FE;
+}
+
+img#book-cover{
+    width: 100%;
+    height: 100%;
+}
+
+p#summary{
+    height: 90px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}

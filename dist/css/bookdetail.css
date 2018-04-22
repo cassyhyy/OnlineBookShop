@@ -1,0 +1,145 @@
+body{
+    font-family: "Microsoft Yahei","微软雅黑";
+    width: 100%;
+    height: 100%;
+}
+
+div.showwindow{
+    /*position: absolute;*/
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    bottom: 0px;
+    background-image: url(../img/login-back-3.jpg);
+    background-color: #FAFAFA;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+div.showwindow h1{
+    color: #EFEFEF;
+}
+div.showwindow p{
+    color: #EFEFEF;
+}
+
+div.top-search{
+    position: absolute;
+    background-color: #1A4677;
+    height: 100px;
+    width: 100%;
+}
+
+div.center{
+    height:auto;
+    padding-top:120px;
+    background-color: transparent;
+    bottom: 0px;
+    min-height: 800px;
+}
+
+div.book{
+    height: auto;
+    background-color: rgba(222, 222, 222, 0.80);
+    padding: 30px;
+    padding-left: 60px;
+}
+
+div.book-cover{
+    height: 260px;
+    background-color: #90AAC5;
+}
+
+div.book-name p{
+    font-size: 18px;
+    color: #212121;
+    font-weight: bold;
+}
+
+div.book-price {
+    padding-top:6px;
+
+}
+div.book-price p{
+    font-size: 16px;
+    color: #212121;
+    vertical-align: middle;
+}
+
+div.price p{
+    font-size: 24px;
+    color: #004491;
+    font-weight: bold;
+}
+div.price{
+    padding-left: 20px;
+}
+
+div.num-change{
+    padding-top:5px;
+}
+div.num-minus{
+    padding-top:2px;
+    padding-left:20px;
+}
+div.num-plus{
+    padding-top:2px;
+    padding-left: 0px;
+}
+
+div.num-minus a{
+    text-decoration: none;
+}
+div.num-plus a{
+    text-decoration: none;
+}
+
+input.num{
+    width: 35px;
+    text-align: center;
+}
+
+div.invent-num p{
+    font-size: 14px;
+    color: #212121;
+    vertical-align: middle;
+}
+div.invent-num{
+    padding-top: 4px;
+}
+
+div.sales p{
+    font-size: 20px;
+    color: #004491;
+}
+div.sales{
+    padding-left: 25px;
+}
+
+div.buttons{
+    padding-top: 20px;
+}
+
+div.book-info-2{
+    padding:15px;
+    padding-left: 30px;
+    width:92%;
+    background-color: rgba(196, 206, 222, 0.80);
+}
+
+div.book-info-2 p{
+    font-size: 14px;
+    color: #212121;
+    vertical-align: middle;
+}
+
+div.book-info{
+    margin-top: 20px;
+}
+
+img#book-cover{
+    width: 100%;
+    height: 100%;
+}

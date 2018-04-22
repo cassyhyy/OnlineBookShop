@@ -1,0 +1,98 @@
+body{
+    font-family: "Microsoft Yahei","微软雅黑";
+}
+
+ul.nav a.btn {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 8px;
+    padding: 0px;
+    width: 80px;
+    line-height: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.nav li.navbar-leftborder {
+    border-left: 2px solid #9d9d9d;
+    margin-top: 4px;
+    height: 42px;
+}
+
+ul.navbar-hide {
+    display: none;
+}
+
+ul.nav img.navbar-profile {
+    src: "/img/default.jpg";
+    display: inline-block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+ul.dropdown-inverse {
+    background-color: #222;
+    color: #9d9d9d;
+}
+
+ul.dropdown-inverse li a{
+    color: #9d9d9d;
+}
+
+ul.dropdown-inverse li.divider{
+    background-color: #9d9d9d;
+}
+
+ul.dropdown-inverse li a:hover{
+    color: #ffffff;
+    background-color: transparent;
+}
+
+ul.dropdown-inverse li a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+ul.dropdown-inverse li a.btn {
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+ul.nav a.btn {
+    margin-left: 0;
+    width: 100%;
+}
+
+ul.nav img.navbar-profile {
+    margin-left: 0px;
+}
+
+.nav li.navbar-leftborder {
+    display: none;
+}
+
+ul.nav li.navbar-middleondrop {
+    text-align: center;
+}
+
+ul.nav li.navbar-hideondrop {
+    display: none;
+}
+
+ul.dropdown-inverse {
+    text-align: center;
+}
+
+ul.dropdown-inverse li {
+    text-align: center;
+}
+
+a#usernick {
+    text-align: center;
+}
+}

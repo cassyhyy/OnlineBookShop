@@ -1,0 +1,88 @@
+body{
+    font-family: "Microsoft Yahei","微软雅黑";
+    width: 100%;
+    height: 100%;
+}
+
+div.showwindow{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 50px;
+    bottom: 0px;
+    background-image: url(../img/login-back-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div.info-l{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 80px;
+    margin-top: 20%;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+div.info-s{
+    clear: both;
+}
+
+div.title{
+    margin-top: 20px;
+}
+
+p.title-1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.title-2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p.title-3{
+    font-size: 13px;
+    float:left;
+    display:none;
+}
+
+hr{
+    border:1px solid #242424;
+}
+
+div.info-s{
+    margin-bottom: 10px;
+}
+
+input.name{
+    width: 100%;
+}
+
+div.info-m a.btn{
+    font-size: 25px;
+    font-weight: bold;
+    width: 90%;
+    margin-top: 30px;
+}
+
+div.info{
+    float:left;
+    width:60%;
+    margin-right: 10px;
+}
+
+p.glyphicon.glyphicon-ok{
+    color: #00cc66;
+    display: none;
+}
+
+p.alert{
+    padding:0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: #FE2020;
+    display: none;
+}
